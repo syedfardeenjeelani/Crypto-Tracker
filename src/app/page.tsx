@@ -1,7 +1,51 @@
- 
-import BitcoinPriceChart from "./components/BitcoinPriceChart/BitcoinPriceChart"; 
+'use client'
+import { useEffect, useState } from "react";
+import BitcoinPriceChart from "./components/BitcoinPriceChart/BitcoinPriceChart";
+import Performance from "./components/Performance/Performance";
 
 export default function Home() {
+  
+  const [activeSection, setActiveSection] = useState("overview");
+
+ const sections = [
+   { id: "overview", label: "Overview" },
+   { id: "fundamentals", label: "Fundamentals" },
+   { id: "news", label: "News Insights" },
+   { id: "sentiments", label: "Sentiments" },
+   { id: "team", label: "Team" },
+   { id: "technicals", label: "Technicals" },
+   { id: "tokenomics", label: "Tokenomics" },
+ ];
+
+ const scrollToSection = (id : string) => {
+  setActiveSection(id);
+   const element = document.getElementById(id);
+   if (element) {
+     element.scrollIntoView({ behavior: "smooth" });
+   }
+ };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = window.scrollY;
+
+      sections.forEach(({ id }) => {
+        const element = document.getElementById(id);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (
+            currentPosition >= offsetTop - 100 &&
+            currentPosition < offsetTop + offsetHeight - 100
+          ) {
+            setActiveSection(id);
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -37,11 +81,31 @@ export default function Home() {
           Bitcoin
         </span>
       </div>
-      <div className="flex gap-[20px]">
-        <BitcoinPriceChart />
+
+      <BitcoinPriceChart />
+      <div className="my-[20px] h-[48px] flex items-center">
+        <ul className=" list-none h-[48px] flex items-center  font-medium gap-[32px] text-[#3E424A] leading-[19.36px] tracking-[-1%] ">
+          {
+            sections.map((el,index)=>{
+              return (
+                <li
+                  onClick={() => scrollToSection(el.id)}
+                  key={index}
+                  className={`h-12 flex items-center hover:text-[#0141CF] cursor-pointer ${
+                    activeSection === el.id
+                      ? "border-b-[#0052FE] border-b-[3px] text-[#0141CF] font-semibold"
+                      : ""
+                  }`}
+                >
+                  {el.label}
+                </li>
+              );
+            })
+          }
+        </ul>
       </div>
-      <div className="h-[200vh]"></div>
+      <div className="h-[100vh]">kasnmklan</div>
+      <Performance />
     </>
   );
 }
- 

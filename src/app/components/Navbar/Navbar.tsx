@@ -165,9 +165,9 @@ const Navbar = () => {
         </div>
         <div className="max-w-[909px]   hidden md:flex items-center justify-end gap-[45px]  ">
           <ul className="flex gap-[32px] text-[#0F1629] font-semibold tracking-[-1%] ">
-            <li>Crypto Taxes</li>
-            <li>Free Tools</li>
-            <li>Resources Center</li>
+            <li className="li">Crypto Taxes</li>
+            <li className="li">Free Tools</li>
+            <li className="li">Resources Center</li>
           </ul>
           <button
             className="text-white w-[136px] h-[40px] rounded-lg p-2 "

@@ -1,9 +1,9 @@
 
-li {
+.li{
   transition: color 0.3s ease, transform 0.2s ease;  
 }
 
-li:hover {
+.li:hover {
   cursor: pointer;
   color: #5a68e9;  
   transform: scale(1.02);  
