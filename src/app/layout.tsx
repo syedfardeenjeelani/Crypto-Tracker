@@ -30,7 +30,7 @@ export default function RootLayout({
         <body className="bg-[#EFF2F5]" suppressHydrationWarning>
           <div className="flex  flex-col">
             <Navbar />
-            <main>{children}</main>
+            <main className=" md:px-[60px] px-6 ">{children}</main>
             {/* <Toaster /> */}
           </div>
         </body>

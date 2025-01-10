@@ -1,9 +1,9 @@
-'use client'
+"use client";
 import React, { useState } from "react";
-import './Navbar.css'
+import "./Navbar.css";
 
 const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div
       style={{
@@ -11,7 +11,7 @@ const Navbar = () => {
       }}
       className="border-[#DEDFE2] bg-white border"
     >
-      <div className=" px-6  mx-auto flex justify-between  items-center   ">
+      <div className="md:px-[60px] px-6   mx-auto flex justify-between  items-center   ">
         <div>
           <svg
             width="97"
@@ -163,7 +163,7 @@ const Navbar = () => {
             </defs>
           </svg>
         </div>
-        <div className="max-w-[909px]  hidden md:flex items-center justify-end gap-[45px]  ">
+        <div className="max-w-[909px]   hidden md:flex items-center justify-end gap-[45px]  ">
           <ul className="flex gap-[32px] text-[#0F1629] font-semibold tracking-[-1%] ">
             <li>Crypto Taxes</li>
             <li>Free Tools</li>
@@ -179,7 +179,6 @@ const Navbar = () => {
             Get Started
           </button>
         </div>
-
         <button
           className="md:hidden p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -210,7 +209,7 @@ const Navbar = () => {
               strokeLinecap="round"
             />
           </svg>
-        </button> 
+        </button>
         {isMenuOpen && (
           <div className="absolute top-[72px]  left-0 right-0 bg-white border-t border-[#DEDFE2] md:hidden">
             <div className="px-4 py-2">
