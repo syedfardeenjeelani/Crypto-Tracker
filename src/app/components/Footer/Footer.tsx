@@ -25,7 +25,7 @@ const CoinCard = ({ coin }: any) => {
                 className="rounded-full"
               />
             )}
-            <span className="font-medium">{coin.symbol}</span>
+            <span className="font-medium">{coin.name}</span>
           </div>
           <span
             className={`px-2 py-1 ml-6 sm:ml-1  rounded text-[12px] ${
