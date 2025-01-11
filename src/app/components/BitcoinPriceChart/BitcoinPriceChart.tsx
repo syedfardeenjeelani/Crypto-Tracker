@@ -4,6 +4,7 @@ import TradinViewWidget from "../ChartWidget/TradinViewWidget";
 
 const BitcoinPriceChart = () => {
      const { data, isLoading, error } = useGetBitcoinPriceQuery(null);
+     if (error || isLoading) return null
      console.log(data);
      const dataObj =  data?.bitcoin
 

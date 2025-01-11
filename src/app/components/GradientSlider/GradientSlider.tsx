@@ -8,12 +8,12 @@ const GradientSlider = ({
 }: any) => {
   const [value, setValue] = useState(initialValue);
   const [isDragging, setIsDragging] = useState(false);
-  const [showTooltip, setShowTooltip] = useState(false);
-  const sliderRef : any = useRef(null);
+  const [showTooltip, setShowTooltip] = useState(true);
+  const sliderRef: any = useRef(null);
 
   const percentage = ((value - min) / (max - min)) * 100;
 
-  const handleMove = (clientX : any) => {
+  const handleMove = (clientX: any) => {
     if (sliderRef.current) {
       const rect = sliderRef.current.getBoundingClientRect();
       const position = clientX - rect.left;
@@ -27,7 +27,7 @@ const GradientSlider = ({
     }
   };
 
-  const handleMouseDown = (e : any) => {
+  const handleMouseDown = (e: any) => {
     setIsDragging(true);
     handleMove(e.clientX);
   };
@@ -74,18 +74,16 @@ const GradientSlider = ({
       {/* Main slider track */}
       <div
         ref={sliderRef}
-        className="relative cursor-pointer mb-8"
-        style={{ width: "582.8px", height: "4.63px" }}
+        className="relative cursor-pointer mb-8 w-full h-1"
         onMouseDown={handleMouseDown}
         onTouchStart={handleTouchStart}
       >
         {/* Gradient background */}
         <div
-          className="absolute w-full h-full"
+          className="absolute w-full h-full rounded-lg"
           style={{
             background:
               "linear-gradient(90deg, #FF4949 0%, #FF4E11 15.34%, #FC870A 30.45%, #FFAF11 48.68%, #C2CB21 62.75%, #11EB68 100.03%)",
-            borderRadius: "10px",
           }}
         />
 
@@ -94,12 +92,12 @@ const GradientSlider = ({
             isDragging ? "cursor-grabbing" : "cursor-grab"
           }`}
           style={{ left: `${percentage}%` }}
-          onMouseEnter={() => setShowTooltip(true)}
-          onMouseLeave={() => setShowTooltip(false)}
+          // onMouseEnter={() => setShowTooltip(true)}
+          // onMouseLeave={() => setShowTooltip(false)}
         >
           {/* Tooltip */}
           {(showTooltip || isDragging) && (
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 translate-y-[28%]  text-[#44475B] px-2 py-1 rounded text-sm whitespace-nowrap">
+            <div className="absolute top-full left-1/2 transform -translate-x-1/2 translate-y-2 text-[#44475B] px-2 py-1 rounded text-sm whitespace-nowrap">
               ${value.toLocaleString()}
             </div>
           )}

@@ -2,6 +2,12 @@
 import { useEffect, useState } from "react";
 import BitcoinPriceChart from "./components/BitcoinPriceChart/BitcoinPriceChart";
 import Performance from "./components/Performance/Performance";
+import Sentiments from "./components/Sentiments/Sentiments";
+import About from "./components/About/About";
+import Tokenomics from "./components/Tokenomics/Tokenomics";
+import Team from "./components/Team/Team";
+import Footer from "./components/Footer/Footer";
+import RightSide from "./components/RightSide/RightSide";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("overview");
@@ -9,7 +15,7 @@ export default function Home() {
   const sections = [
     { id: "overview", label: "Overview" },
     { id: "fundamentals", label: "Fundamentals" },
-    { id: "news", label: "News Insights" },
+    { id: "about", label: "About" },
     { id: "sentiments", label: "Sentiments" },
     { id: "team", label: "Team" },
     { id: "technicals", label: "Technicals" },
@@ -80,9 +86,14 @@ export default function Home() {
           Bitcoin
         </span>
       </div>
+      <div className="flex gap-5 ">
+        <BitcoinPriceChart />
+        <span className=" xl:flex hidden ">
+          <RightSide />
+        </span>
+      </div>
 
-      <BitcoinPriceChart />
-      <div className="my-[20px]  h-[48px]  border-b border-b-[#D3E0E6] flex items-center">
+      <div className="my-[20px] md:w-[63%]   h-[48px]  border-b border-b-[#D3E0E6] flex items-center">
         <ul className=" list-none h-[48px] overflow-x-auto flex items-center   font-medium gap-[32px] text-[#3E424A] leading-[19.36px] tracking-[-1%] ">
           {sections.map((el, index) => {
             return (
@@ -101,7 +112,15 @@ export default function Home() {
           })}
         </ul>
       </div>
-      <Performance />
+      <div className="flex flex-col gap-[20px]">
+        <Performance />
+        <Sentiments />
+        <About />
+        <div className="md:flex hidden  ">
+          <Tokenomics />
+        </div>
+        <Team />
+      </div>
     </>
   );
 }

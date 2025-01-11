@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, memo } from "react";
 
 function TradingViewWidget() {
-  const container : any = useRef(null);
+  const container : any | undefined = useRef(null);
 
   useEffect(() => {
     const script = document.createElement("script");

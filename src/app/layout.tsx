@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import ReduxWrapper from "../redux/ReduxWrapper";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import RightSide from "./components/RightSide/RightSide";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +34,10 @@ export default function RootLayout({
             <Navbar />
             <main className=" md:px-[60px] px-6 ">{children}</main>
             {/* <Toaster /> */}
+            <Footer />
+            <div className=" xl:hidden flex p-[16px] border border-red-700 items-center  justify-center w-full ">
+              <RightSide />
+            </div>
           </div>
         </body>
       </html>

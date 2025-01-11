@@ -23,7 +23,14 @@ export const priceApi = createApi({
       query: () =>
         `coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&price_change_percentage=24h`,
     }),
+    getTrendingSearches: builder.query({
+      query: () => `search/trending`,
+    }),
   }),
 });
 
-export const { useGetBitcoinPriceQuery, useGetHighLowDataQuery } = priceApi;
+export const {
+  useGetBitcoinPriceQuery,
+  useGetHighLowDataQuery,
+  useGetTrendingSearchesQuery,
+} = priceApi;
