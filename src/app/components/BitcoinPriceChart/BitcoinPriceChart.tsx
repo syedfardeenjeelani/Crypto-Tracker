@@ -25,7 +25,7 @@ const formatCurrency = (amount:number, currency : string) => {
     return formatter.format(amount);
 }; 
   return (
-    <div className="bg-white rounded-lg flex px-[24px] pb-[33px] pt-[24px]  flex-col  w-[881px] h-[711px]">
+    <div className="bg-white rounded-lg flex px-[24px] pb-[33px] pt-[24px]  flex-col   h-[711px]  md:w-[63%]  ">
       {/* //// header  */}
       <div className="   ">
         <div className="flex items-center gap-10 ">
@@ -67,7 +67,7 @@ const formatCurrency = (amount:number, currency : string) => {
         </div>
       </div>
       {/* //// section 2 */}
-      <div className="w-[837px] flex flex-col  h-[534px] mt-[40px] mb-[20px] ">
+      <div className="w-[100%] flex flex-col  h-[534px] mt-[40px] mb-[20px] ">
         <div className="h-[66px]  mb-[24px]  flex gap-[32px]">
           <div className="flex flex-col">
             <span className="text-[#0B1426] font-semibold text-[28px] ">
