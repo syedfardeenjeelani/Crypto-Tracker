@@ -15,7 +15,7 @@ const CoinCard = ({ coin }: any) => {
     <div className="sm:w-[252px]  h-[160px] p-[17px] border border-[#E3E3E3] rounded-[10px]">
       <div className="sm:w-[218px] h-[126px]">
         <div className="flex items-center">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center sm:gap-2 gap-1">
             {coin.thumb && (
               <Image
                 src={coin.thumb}
@@ -28,13 +28,13 @@ const CoinCard = ({ coin }: any) => {
             <span className="font-medium">{coin.symbol}</span>
           </div>
           <span
-            className={`px-2 py-1 ml-1 rounded text-[12px] ${
+            className={`px-2 py-1 ml-6 sm:ml-1  rounded text-[12px] ${
               isPositive
                 ? "bg-[#0AB27D0F] text-[#32BE88]"
                 : "bg-[#EE68551A] text-[#E96975]"
             }`}
           >
-            {priceChange?.toFixed(2)}%
+            {priceChange?.toFixed(1)}%
           </span>
         </div>
 

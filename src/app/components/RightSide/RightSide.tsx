@@ -1158,7 +1158,8 @@ const RightSide = () => {
                 </div>
                 <span
                   className={`px-2 py-1 ml-1 rounded text-[12px] ${
-                    Number(el?.item?.data?.price_change_percentage_24h["usd"]) > 0
+                    Number(el?.item?.data?.price_change_percentage_24h["usd"]) >
+                    0
                       ? "bg-[#0AB27D0F] text-[#32BE88]"
                       : "bg-[#EE68551A] text-[#E96975]"
                   }`}

@@ -1,15 +1,15 @@
-import { useGetHighLowDataQuery } from '@/app/Services/Price/priceApi'
-import React from 'react'
-import GradientSlider from '../GradientSlider/GradientSlider'
+import { useGetHighLowDataQuery } from "@/app/Services/Price/priceApi";
+import React from "react";
+import GradientSlider from "../GradientSlider/GradientSlider";
 
 const Performance = () => {
-  const { data , isLoading, error } : any = useGetHighLowDataQuery(null);
+  const { data, isLoading, error }: any = useGetHighLowDataQuery(null);
 
   if (isLoading && !data?.length) return <h1>Loading...</h1>;
 
   // console.log(data);
   // Helper function to format large numbers
-  const formatNumber = (num : number) => {
+  const formatNumber = (num: number) => {
     return new Intl.NumberFormat("en-US", {
       style: "currency",
       currency: "USD",
@@ -265,6 +265,6 @@ const Performance = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Performance
+export default Performance;
