@@ -75,7 +75,7 @@ const Performance = () => {
               max={data[0]?.high_24h || 0}
               onChange={(newValue: any) => console.log("New value:", newValue)}
             />
-            <div className="w-[116px] ml-7 h-[71px] flex flex-col gap-[10px]">
+            <div className="w-[116px] sm:ml-7 h-[71px] flex flex-col gap-[10px]">
               <span className="text-[#44475B] text-[13.78px] font-normal ">
                 Todays High
               </span>
@@ -111,7 +111,7 @@ const Performance = () => {
               max={data[0]?.ath || 0}
               onChange={(newValue: any) => console.log("New value:", newValue)}
             />
-            <div className="w-[116px] ml-7 h-[71px] flex flex-col gap-[10px]">
+            <div className="w-[116px] sm:ml-7 h-[71px] flex flex-col gap-[10px]">
               <span className="text-[#44475B] text-[13.78px] font-normal ">
                 52W High
               </span>
