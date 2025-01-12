@@ -57,7 +57,7 @@ const Performance = () => {
         <div className=" flex flex-col xl:pl-0 pl-[0.65rem]  gap-[15px] ">
           <div className="flex items-center">
             <div className="w-[116px] h-[71px] flex flex-col xl:gap-[10px]">
-              <span className="text-[#44475B] text-[11px] xl:text-[13.78px] font-normal ">
+              <span className="text-[#44475B] text-[12px] xl:text-[13.78px] font-normal ">
                 Todays low
               </span>
               <span className="mb-[13px] text-[#44475B] text-[15.63px] font-mediumt- ">
@@ -78,7 +78,7 @@ const Performance = () => {
               onChange={(newValue: any) => console.log("New value:", newValue)}
             />
             <div className="w-[116px] sm:ml-7 h-[71px] flex flex-col xl:gap-[10px]">
-              <span className="text-[#44475B] text-[11px] xl:text-[13.78px] font-normal ">
+              <span className="text-[#44475B] text-[12px] xl:text-[13.78px] font-normal ">
                 Todays High
               </span>
               <span className="mb-[13px] text-[#44475B] text-[15.63px] font-mediumt- ">
@@ -94,7 +94,7 @@ const Performance = () => {
           </div>
           <div className="flex items-center">
             <div className="w-[116px] h-[71px] flex flex-col gap-[10px]">
-              <span className="text-[#44475B] text-[11px]  xl:text-[13.78px] font-normal ">
+              <span className="text-[#44475B] text-[12px]  xl:text-[13.78px] font-normal ">
                 52W Low
               </span>
               <span className="mb-[13px] text-[#44475B] text-[15.63px] font-mediumt- ">
@@ -114,7 +114,7 @@ const Performance = () => {
               onChange={(newValue: any) => console.log("New value:", newValue)}
             />
             <div className="w-[116px] sm:ml-7 h-[71px] flex flex-col gap-[10px]">
-              <span className="text-[#44475B] text-[11px] xl:text-[13.78px] font-normal ">
+              <span className="text-[#44475B] text-[12px] xl:text-[13.78px] font-normal ">
                 52W High
               </span>
               <span className="mb-[13px] text-[#44475B] text-[15.63px] font-mediumt- ">
