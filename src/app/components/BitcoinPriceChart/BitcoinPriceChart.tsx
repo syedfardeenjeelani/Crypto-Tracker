@@ -27,7 +27,7 @@ const formatCurrency = (amount:number, currency : string) => {
     return formatter.format(amount);
 }; 
   return (
-    <div className="bg-white rounded-lg flex px-[24px] pb-[33px] pt-[24px]  flex-col   h-[711px] xl:h-[788px]  md:w-[63%]  ">
+    <div className="bg-white rounded-lg flex px-[24px] pb-[33px] pt-[24px]  flex-col  h-[788px]  md:w-[63%]  ">
       {/* //// header  */}
       <div className="   ">
         <div className="flex items-center gap-10 ">
@@ -116,7 +116,7 @@ const formatCurrency = (amount:number, currency : string) => {
             </span>
           </div>
         </div>
-        <div className="border border-[#DEE1E6] mb-[24px] "></div>
+        <div className="border border-[#DEE1E6] mb-[14px] "></div>
       </div>
       <div>
         <TradinViewWidget  />

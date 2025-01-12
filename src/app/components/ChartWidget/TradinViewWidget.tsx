@@ -13,7 +13,7 @@ function TradingViewWidget() {
     script.innerHTML = `
         {
           "width": "100%",
-          "height": "515",
+          "height": "650",
             "symbol": "BITSTAMP:BTCUSD",
           "interval": "D",
           "timezone": "Etc/UTC",
