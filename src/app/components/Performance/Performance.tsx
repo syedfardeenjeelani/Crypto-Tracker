@@ -49,7 +49,7 @@ const Performance = () => {
     <div className="  md:w-[63%]  h-fit xl:h-[682px] flex items-center flex-col justify-center rounded-lg bg-white ">
       <div
         id="overview"
-        className="w-[94%] pb-[16px] h-fit xl:h-[234px]  flex flex-col gap-[24px]"
+        className="w-[94%] pb-[16px]  h-fit xl:h-[234px]  flex flex-col gap-[24px]"
       >
         <span className="text-[#0F1629]  font-semibold text-[24px] ">
           Performance
@@ -70,7 +70,7 @@ const Performance = () => {
                   : 0}
               </span>
             </div>
-            
+
             <GradientSlider
               initialValue={Number(data[0]?.low_24h) + 100 || 0}
               min={data[0]?.low_24h || 0}

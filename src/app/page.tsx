@@ -90,7 +90,9 @@ export default function Home() {
         <BitcoinPriceChart />
         <RightSide />
       </div>
-      <BitcoinPriceChart />
+      <span className=" xl:hidden flex  ">
+        <BitcoinPriceChart />
+      </span>
 
       <div className="my-[20px] md:w-[63%]   h-[48px]  border-b border-b-[#D3E0E6] flex items-center">
         <ul className=" list-none h-[48px] overflow-x-auto flex items-center   font-medium gap-[32px] text-[#3E424A] leading-[19.36px] tracking-[-1%] ">
