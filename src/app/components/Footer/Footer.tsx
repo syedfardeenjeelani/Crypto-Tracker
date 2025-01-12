@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import Loading from "../Loading/Loading";
 
 const CoinCard = ({ coin }: any) => {
   const priceChange = coin?.data?.price_change_percentage_24h?.["usd"];
@@ -69,11 +70,11 @@ const Footer = () => {
 
 
   if (isLoading || !data?.coins?.length) {
-    return null;
+    return <Loading />;
   }
 
   return (
-    <div className="xl:min-h-[628px]  w-[104%] mt-[20px] xl:mt-[78px] p-[14px] md:p-[70px] bg-white">
+    <div className="xl:min-h-[628px] xl:w-[100%]  w-[104%] mt-[20px] xl:mt-[78px] p-[14px] md:p-[70px] bg-white">
       <div className="flex flex-col gap-[30px]">
         <div>
           <h1 className="text-[#202020] text-[24px] font-semibold mb-[20px]">

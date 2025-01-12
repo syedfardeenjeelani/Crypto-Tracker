@@ -1,10 +1,11 @@
 'use client'
 import { useGetBitcoinPriceQuery } from "@/app/Services/Price/priceApi"; 
 import TradinViewWidget from "../ChartWidget/TradinViewWidget";
+import Loading from "../Loading/Loading";
 
 const BitcoinPriceChart = () => {
      const { data, isLoading, error } = useGetBitcoinPriceQuery(null);
-     if (error || isLoading) return null
+     if (error || isLoading) return  <Loading/>
      console.log(data);
      const dataObj =  data?.bitcoin
 

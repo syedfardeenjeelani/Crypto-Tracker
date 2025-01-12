@@ -2,10 +2,11 @@
 import { useGetTrendingSearchesQuery } from "@/app/Services/Price/priceApi";
 import Image from "next/image";
 import React from "react";
+import Loading from "../Loading/Loading";
 
 const RightSide = () => {
   const { data, isLoading, error } = useGetTrendingSearchesQuery(null);
-  if (error || isLoading) return null;
+  if (error || isLoading) return <Loading />;
 
   const trendingCoins = data?.coins;
 //   console.log("asnaslkdnnaskl",trendingCoins.slice(0,3).map((el)=> el.item.name))

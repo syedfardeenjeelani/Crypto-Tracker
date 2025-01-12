@@ -1,11 +1,12 @@
 import { useGetHighLowDataQuery } from "@/app/Services/Price/priceApi";
 import React from "react";
 import GradientSlider from "../GradientSlider/GradientSlider";
+import Loading from "../Loading/Loading";
 
 const Performance = () => {
   const { data, isLoading, error }: any = useGetHighLowDataQuery(null);
 
-  if (isLoading && !data?.length) return <h1>Loading...</h1>;
+  if (isLoading && !data?.length) return <Loading />;
 
   // console.log(data);
   // Helper function to format large numbers
@@ -69,6 +70,7 @@ const Performance = () => {
                   : 0}
               </span>
             </div>
+            
             <GradientSlider
               initialValue={Number(data[0]?.low_24h) + 100 || 0}
               min={data[0]?.low_24h || 0}
