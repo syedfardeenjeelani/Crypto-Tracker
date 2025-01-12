@@ -52,6 +52,23 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+   const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+   useEffect(() => {
+     const handleResize = () => {
+       setIsLargeScreen(window.innerWidth >= 1280); 
+     };
+ 
+     handleResize(); 
+     window.addEventListener("resize", handleResize);
+
+     return () => {
+       window.removeEventListener("resize", handleResize);
+     };
+   }, []);
+
+
   return (
     <>
       <div className="flex  gap-[6.5px] items-center mb-[17.81px] mt-[17.19px]">
@@ -90,9 +107,8 @@ export default function Home() {
         <BitcoinPriceChart />
         <RightSide />
       </div>
-      <span className=" xl:hidden flex  ">
-        <BitcoinPriceChart />
-      </span>
+
+      {!isLargeScreen && <BitcoinPriceChart />}
 
       <div className="my-[20px] md:w-[63%]   h-[48px]  border-b border-b-[#D3E0E6] flex items-center">
         <ul className=" list-none h-[48px] overflow-x-auto flex items-center   font-medium gap-[32px] text-[#3E424A] leading-[19.36px] tracking-[-1%] ">
