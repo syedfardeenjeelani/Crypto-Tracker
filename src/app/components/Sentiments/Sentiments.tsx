@@ -308,7 +308,7 @@ const Sentiments = () => {
             </svg>
           </span>
           <div className=" mt-[24px] sm:items-start items-center flex gap-[40px]">
-            <div className=" w-[116.86px] sm:h-[120px] h-[65px] text-[#0FBA83] text-[18px] md:text-[36px] rounded-full bg-[#EBF9F4] flex items-center justify-center ">
+            <div className="aspect-square w-[65px] sm:w-[120px] text-[#0FBA83] text-lg sm:text-4xl rounded-full bg-[#EBF9F4] flex items-center justify-center">
               76%
             </div>
             <div className="pl-[8px] flex gap-3 flex-col  ">
