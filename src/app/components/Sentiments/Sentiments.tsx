@@ -211,11 +211,11 @@ const Sentiments = () => {
             }}
             modules={[Navigation]}
             className="mySwiper"
-            breakpoints={{ 
+            breakpoints={{
               0: {
-                slidesPerView: 1, 
-                spaceBetween: 500, 
-              }, 
+                slidesPerView: 1,
+                spaceBetween: 500,
+              },
               768: {
                 slidesPerView: 2,
                 spaceBetween: 450,
@@ -316,7 +316,7 @@ const Sentiments = () => {
                 <span className="text-[#7C7E8C] font-medium text-[15px] ">
                   Buy
                 </span>
-                <div className="flex gap-2 items-center">
+                <div className="flex gap-2 text-[#0F1629] items-center">
                   {" "}
                   <div className=" h-[8px] rounded-sm  text-[#7C7E8C] text-[14.25px] bg-[#00B386]  w-[25vw] sm:w-[30vw]  "></div>{" "}
                   76%
@@ -326,7 +326,7 @@ const Sentiments = () => {
                 <span className="text-[#7C7E8C] font-medium text-[15px] ">
                   Hold
                 </span>
-                <div className="flex gap-2 items-center">
+                <div className="flex gap-2  text-[#0F1629] items-center">
                   {" "}
                   <div className=" h-[8px] rounded-sm  text-[#7C7E8C] text-[14.25px] bg-[#C7C8CE] w-[4vw]  "></div>{" "}
                   8%
@@ -336,7 +336,7 @@ const Sentiments = () => {
                 <span className="text-[#7C7E8C] font-medium text-[15px] ">
                   Sell
                 </span>
-                <div className="flex gap-2 items-center">
+                <div className="flex gap-2 text-[#0F1629] items-center">
                   {" "}
                   <div className=" h-[8px] rounded-sm  text-[#7C7E8C] text-[14.25px] bg-[#F7324C] w-[8vw]  "></div>{" "}
                   16%
