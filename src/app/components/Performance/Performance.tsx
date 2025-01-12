@@ -51,7 +51,7 @@ const Performance = () => {
         id="overview"
         className="w-[94%] pb-[16px]  h-fit xl:h-[234px]  flex flex-col gap-[24px]"
       >
-        <span className="text-[#0F1629] xl:pl-0 pl-[0.65rem]  font-semibold text-[24px] ">
+        <span className="text-[#0F1629] xl:pl-0 xl:pt-0 pt-2 pl-[0.65rem]  font-semibold text-[24px] ">
           Performance
         </span>
         <div className=" flex flex-col xl:pl-0 pl-[0.65rem]  gap-[15px] ">
