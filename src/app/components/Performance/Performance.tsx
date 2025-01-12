@@ -46,7 +46,7 @@ const Performance = () => {
   };
 
   return (
-    <div className="  md:w-[63%]  h-fit xl:h-[643px] flex p-6 flex-col  rounded-lg bg-white ">
+    <div className="  md:w-[63%]  h-fit xl:h-[643px] flex p-5 flex-col  rounded-lg bg-white ">
       <div
         id="overview"
         className="w-[94%] pb-[16px]  h-fit xl:h-[234px]  flex flex-col gap-[24px]"
