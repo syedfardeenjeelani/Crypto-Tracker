@@ -211,7 +211,7 @@ const Navbar = () => {
           </svg>
         </button>
         {isMenuOpen && (
-          <div className="absolute top-[72px]  left-0 right-0 bg-white border-t border-[#DEDFE2] md:hidden">
+          <div className="absolute top-[72px] z-30  left-0 right-0 bg-white border-t border-[#DEDFE2] md:hidden">
             <div className="px-4 py-2">
               <ul className="flex flex-col gap-4 text-[#0F1629] font-semibold">
                 <li className="py-2 cursor-pointer hover:text-blue-600">
