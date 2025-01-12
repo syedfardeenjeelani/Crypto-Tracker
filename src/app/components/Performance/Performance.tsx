@@ -51,12 +51,12 @@ const Performance = () => {
         id="overview"
         className="w-[94%] pb-[16px]  h-fit xl:h-[234px]  flex flex-col gap-[24px]"
       >
-        <span className="text-[#0F1629]  font-semibold text-[24px] ">
+        <span className="text-[#0F1629] xl:pl-0 pl-[0.65rem]  font-semibold text-[24px] ">
           Performance
         </span>
         <div className=" flex flex-col gap-[15px] ">
           <div className="flex items-center">
-            <div className="w-[116px] h-[71px] flex flex-col gap-[10px]">
+            <div className="w-[116px] h-[71px] flex flex-col xl:gap-[10px]">
               <span className="text-[#44475B] text-[13.78px] font-normal ">
                 Todays low
               </span>
@@ -72,12 +72,12 @@ const Performance = () => {
             </div>
 
             <GradientSlider
-              initialValue={Number(data[0]?.low_24h) + 100 || 0}
+              initialValue={Number(data[0]?.low_24h) + 300 || 0}
               min={data[0]?.low_24h || 0}
               max={data[0]?.high_24h || 0}
               onChange={(newValue: any) => console.log("New value:", newValue)}
             />
-            <div className="w-[116px] sm:ml-7 h-[71px] flex flex-col gap-[10px]">
+            <div className="w-[116px] sm:ml-7 h-[71px] flex flex-col xl:gap-[10px]">
               <span className="text-[#44475B] text-[13.78px] font-normal ">
                 Todays High
               </span>
@@ -108,7 +108,7 @@ const Performance = () => {
               </span>
             </div>
             <GradientSlider
-              initialValue={Number(data[0]?.atl) + 4000 || 0}
+              initialValue={40000}
               min={data[0]?.atl || 0}
               max={data[0]?.ath || 0}
               onChange={(newValue: any) => console.log("New value:", newValue)}
@@ -150,7 +150,7 @@ const Performance = () => {
           </svg>
         </span>
 
-        <div className="xl:h-[270px] xl:bg-inherit pl-5 xl:pl-0 bg-white h-fit xl:pb-0 pb-3 flex w-[100%] xl:flex-row flex-col  xl:justify-between pt-[16px] ">
+        <div className="xl:h-[270px] xl:bg-inherit pl-5 xl:pl-0 bg-white h-fit xl:pb-0 pb-3 flex w-[100%] xl:flex-row flex-col  xl:justify-between xl:pt-[16px] ">
           <div className="flex  flex-col">
             <div className="flex items-center h-[54px] border-b border-b[#D3E0E6] justify-between w-[95%] md:w-[343px] ">
               <span className="text-[#768396] text-[14px] font-medium">
