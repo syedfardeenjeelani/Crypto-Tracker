@@ -5,8 +5,7 @@ import Performance from "./components/Performance/Performance";
 import Sentiments from "./components/Sentiments/Sentiments";
 import About from "./components/About/About";
 import Tokenomics from "./components/Tokenomics/Tokenomics";
-import Team from "./components/Team/Team";
-import Footer from "./components/Footer/Footer";
+import Team from "./components/Team/Team"; 
 import RightSide from "./components/RightSide/RightSide";
 
 export default function Home() {

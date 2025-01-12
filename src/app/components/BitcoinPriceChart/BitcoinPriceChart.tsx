@@ -6,7 +6,7 @@ import Loading from "../Loading/Loading";
 const BitcoinPriceChart = () => {
      const { data, isLoading, error } = useGetBitcoinPriceQuery(null);
      if (error || isLoading) return  <Loading/>
-     console.log(data);
+    //  console.log(data);
      const dataObj =  data?.bitcoin
 
 // {

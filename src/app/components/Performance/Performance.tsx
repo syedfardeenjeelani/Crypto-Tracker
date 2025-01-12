@@ -75,7 +75,7 @@ const Performance = () => {
               initialValue={Number(data[0]?.low_24h) + 300 || 0}
               min={data[0]?.low_24h || 0}
               max={data[0]?.high_24h || 0}
-              onChange={(newValue: any) => console.log("New value:", newValue)}
+              // onChange={(newValue: any) => console.log("New value:")}
             />
             <div className="w-[116px] sm:ml-7 h-[71px] flex flex-col xl:gap-[10px]">
               <span className="text-[#44475B] text-[12px] xl:text-[13.78px] font-normal ">
@@ -111,7 +111,7 @@ const Performance = () => {
               initialValue={40000}
               min={data[0]?.atl || 0}
               max={data[0]?.ath || 0}
-              onChange={(newValue: any) => console.log("New value:", newValue)}
+              // onChange={(newValue: any) => console.log("New value:", newValue)}
             />
             <div className="w-[116px] sm:ml-7 h-[71px] flex flex-col gap-[10px]">
               <span className="text-[#44475B] text-[12px] xl:text-[13.78px] font-normal ">
