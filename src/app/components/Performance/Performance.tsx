@@ -150,7 +150,7 @@ const Performance = () => {
           </svg>
         </span>
 
-        <div className="xl:h-[270px] xl:bg-inherit pl-5 xl:pl-0 bg-white h-fit  flex w-[100%] xl:flex-row flex-col  xl:justify-between pt-[16px] ">
+        <div className="xl:h-[270px] xl:bg-inherit pl-5 xl:pl-0 bg-white h-fit xl:pb-0 pb-3 flex w-[100%] xl:flex-row flex-col  xl:justify-between pt-[16px] ">
           <div className="flex  flex-col">
             <div className="flex items-center h-[54px] border-b border-b[#D3E0E6] justify-between w-[95%] md:w-[343px] ">
               <span className="text-[#768396] text-[14px] font-medium">
