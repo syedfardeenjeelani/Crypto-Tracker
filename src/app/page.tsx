@@ -86,12 +86,11 @@ export default function Home() {
           Bitcoin
         </span>
       </div>
-      <div className="flex gap-5 ">
+      <div className="  xl:flex hidden gap-5 ">
         <BitcoinPriceChart />
-        <span className=" xl:flex hidden ">
-          <RightSide />
-        </span>
+        <RightSide />
       </div>
+      <BitcoinPriceChart />
 
       <div className="my-[20px] md:w-[63%]   h-[48px]  border-b border-b-[#D3E0E6] flex items-center">
         <ul className=" list-none h-[48px] overflow-x-auto flex items-center   font-medium gap-[32px] text-[#3E424A] leading-[19.36px] tracking-[-1%] ">
