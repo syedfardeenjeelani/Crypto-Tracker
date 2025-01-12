@@ -34,8 +34,10 @@ export default function RootLayout({
             <Navbar />
             <main className=" md:px-[60px] px-6 ">{children}</main>
             {/* <Toaster /> */}
-            <Footer />
-            <div className=" xl:hidden flex p-[16px]  items-center  justify-center w-full ">
+            <span className=" xl:flex hidden ">
+              <Footer />
+            </span>
+            <div className=" xl:hidden flex p-[20px]  items-center  justify-center w-full ">
               <RightSide />
             </div>
           </div>

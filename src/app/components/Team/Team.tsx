@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 
 const Team = () => {
 
@@ -218,35 +219,41 @@ const Team = () => {
         </p>
       </div>
       <div className=" flex flex-col gap-[24px] ">
-       {teamData.map((el,index)=>{
-        return (
-          <div key={index} className="  md:h-[177.51px] h-[395px] px-2 sm:px-0  flex md:flex-row flex-col md:justify-normal justify-center items-center
-           rounded-[7.46px] bg-[#E8F4FD] ">
-            <div className=" w-[128px] md:h-[155px] flex items-center flex-col gap-[10px] ">
-              {el.image}
+        {teamData.map((el, index) => {
+          return (
+            <div
+              key={index}
+              className="  md:h-[177.51px] h-[395px] px-2 sm:px-0  flex md:flex-row flex-col md:justify-normal justify-center items-center
+           rounded-[7.46px] bg-[#E8F4FD] "
+            >
+              <div className=" w-[128px] md:h-[155px] flex items-center flex-col gap-[10px] ">
+                {el.image}
 
-              <h1 className=" text-[15px] text-[#0F1629] sm:font-semibold ">
-                {el.name}
-              </h1>
-              <span className="text-xs text-[#788F9B] font-medium ">
-                Designation Here
-              </span>
+                <h1 className=" text-[15px] text-[#0F1629] sm:font-semibold ">
+                  {el.name}
+                </h1>
+                <span className="text-xs text-[#788F9B] font-medium ">
+                  Designation Here
+                </span>
+              </div>
+              <div className=" sm:w-[646px] md:h-[110px] ">
+                <p className="text-[#0F1629] text-[14px] ">
+                  Lorem ipsum dolor sit amet consectetur. In justo rutrum sit
+                  sit fermentum ut libero hendrerit id. Tellus sit ornare netus
+                  sagittis in nunc convallis mattis maecenas. Tempus arcu leo
+                  sociis laoreet nec neque sed pellentesque viverra. Consectetur
+                  proin amet ut id facilisi quis consectetur. Tellus gravida
+                  ultricies feugiat sed eu egestas dolor est ipsum. Malesuada
+                  etiam mi gravida praesent interdu
+                </p>
+              </div>
             </div>
-            <div className=" sm:w-[646px] md:h-[110px] ">
-              <p className="text-[#0F1629] text-[14px] ">
-                Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit
-                fermentum ut libero hendrerit id. Tellus sit ornare netus
-                sagittis in nunc convallis mattis maecenas. Tempus arcu leo
-                sociis laoreet nec neque sed pellentesque viverra. Consectetur
-                proin amet ut id facilisi quis consectetur. Tellus gravida
-                ultricies feugiat sed eu egestas dolor est ipsum. Malesuada
-                etiam mi gravida praesent interdu
-              </p>
-            </div>
-          </div>
-        );
-       })}
+          );
+        })}
       </div>
+      <span className=" flex xl:hidden ">
+        <Footer />
+      </span>
     </div>
   );
 };

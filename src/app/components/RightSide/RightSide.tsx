@@ -574,12 +574,13 @@ const RightSide = () => {
           </svg>
         </button>
       </div>
-      <div className=" sm:w-[67%] flex xl:hidden flex-col justify-center items-center h-[515px] bg-[#0052FE] rounded-lg  ">
-        <div className=" w-[90%]  h-[182px] ">
+      <div className=" sm:w-[67%] flex xl:hidden flex-col justify-center items-center h-[434px] xl:h-[515px] bg-[#0052FE] rounded-2xl xl:rounded-lg  ">
+      <div className="  xl:block flex flex-col-reverse items-center " >
+          <div className=" w-[90%]  h-[182px] ">
           <h1 className="  leading-10 text-[#F2F2F2] text-[20px] font-bold text-center ">
             Get Started with KoinX for FREE
           </h1>
-          <p className=" mt-[14px] leading-6 text-[#F2F2F2] text-[14px] font-medium text-center ">
+          <p className=" mt-2 xl:mt-[14px] leading-6 text-[#F2F2F2] text-[14px] font-medium text-center ">
             With our range of features that you can equip for free, KoinX allows
             you to be more educated and aware of your tax reports.
           </p>
@@ -1110,7 +1111,8 @@ const RightSide = () => {
             </clipPath>
           </defs>
         </svg>
-        <button className="mt-[19px] w-[237px] flex gap-2 bg-white justify-center items-center h-[48px] rounded-[8px] text-[#0F1629] text-[16px] font-semibold ">
+      </div>
+        <button  className="xl:mt-[19px] w-[237px] flex gap-2 bg-white justify-center items-center h-[48px] rounded-[8px] text-[#0F1629] text-[16px] font-semibold ">
           Get Started For Free
           <svg
             width="15"

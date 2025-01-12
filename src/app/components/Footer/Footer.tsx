@@ -12,9 +12,9 @@ const CoinCard = ({ coin }: any) => {
   const isPositive = priceChange >= 0;
 
   return (
-    <div className="sm:w-[252px]  h-[160px] p-[17px] border border-[#E3E3E3] rounded-[10px]">
+    <div className="sm:w-[252px]  h-[160px] p-2 xl:p-[17px] border border-[#E3E3E3] rounded-[10px]">
       <div className="sm:w-[218px] h-[126px]">
-        <div className="flex items-center">
+        <div className="flex items-center ">
           <div className="flex items-center sm:gap-2 gap-1">
             {coin.thumb && (
               <Image
@@ -25,7 +25,7 @@ const CoinCard = ({ coin }: any) => {
                 className="rounded-full"
               />
             )}
-            <span className="font-medium text-[#171717] ">{coin.symbol}</span>
+            <span className="font-medium text-[#171717] ">{coin.symbol.slice(0,4)}</span>
           </div>
           <span
             className={`px-2 py-1 ml-6 sm:ml-1  rounded text-[12px] ${
@@ -73,7 +73,7 @@ const Footer = () => {
   }
 
   return (
-    <div className="min-h-[628px] mt-[78px] p-[14px] md:p-[70px] bg-white">
+    <div className="xl:min-h-[628px]  w-[104%] mt-[20px] xl:mt-[78px] p-[14px] md:p-[70px] bg-white">
       <div className="flex flex-col gap-[30px]">
         <div>
           <h1 className="text-[#202020] text-[24px] font-semibold mb-[20px]">
