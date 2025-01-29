@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a submission for the KoinX Frontend Intern Assignment. It implements the Figma design provided in the assignment using **React.js** with **Next.js** framework. The application is designed to display cryptocurrency data dynamically, integrating data from the **CoinGecko API** and includes responsive components as specified.
+This project implements the Figma design provided  using **React.js** with **Next.js** framework. The application is designed to display cryptocurrency data dynamically, integrating data from the **CoinGecko API** and includes responsive components .
  
 
 ## Key Features
